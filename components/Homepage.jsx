@@ -81,7 +81,7 @@ function Homepage() {
           class="apply-button"
           data-hackathon-slug="fusionhackz"
           data-button-theme="dark"
-          className="h-[44px] w-[312px]"
+          style={{ "height": "44px;", "width": "312px" }}
         ></div>
         <div className="flex items-center gap-10 -mb-20 mt-10 justify-center">
           <Link href={"https://devfolio.co/"}>
