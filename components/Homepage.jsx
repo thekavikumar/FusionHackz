@@ -51,10 +51,13 @@ function Homepage() {
 		return { days, hours, minutes, seconds };
 	}
 	return (
-		<div className="w-screen h-screen flex justify-center items-center md:px-10 px-4">
+		<div
+			suppressHydrationWarning
+			className="w-screen h-screen flex justify-center items-center md:px-10 px-4"
+		>
 			<Navbar />
 
-			<div className="text-center max-w-6xl z-10">
+			<div suppressHydrationWarning className="text-center max-w-6xl z-10">
 				<div className="mb-14">
 					<h1 className="text-5xl md:text-7xl font-black headline mb-3 tracking-wider">
 						Unleash the Fusion of Tech Brilliance
@@ -64,11 +67,18 @@ function Homepage() {
 						innovation meets excellence in every line of code!
 					</h2>
 				</div>
-				<div className="md:flex items-center gap-4 mx-auto justify-center">
-					<h1 className="text-2xl font-semibold tracking-wide">
+				<div
+					suppressHydrationWarning
+					className="md:flex items-center gap-4 mx-auto justify-center"
+				>
+					<h1
+						suppressHydrationWarning
+						className="text-2xl font-semibold tracking-wide"
+					>
 						Event Starts in:
 					</h1>
 					<h1
+						suppressHydrationWarning
 						className="text-xl md:text-3xl tracking-wide font-bold"
 						id="counter"
 					>
@@ -82,12 +92,14 @@ function Homepage() {
 						<span className="text-lg font-semibold">sec</span>
 					</h1>
 				</div>
-				<div
-					class="apply-button"
-					data-hackathon-slug="fusionhackz"
-					data-button-theme="dark"
-					className="h-[44px] w-[312px]"
-				></div>
+				<div className="flex items-center mt-6 justify-center">
+					<div
+						className="apply-button"
+						data-hackathon-slug="fusionhackz"
+						data-button-theme="dark"
+						style={{ height: "44px", width: "312px" }}
+					></div>
+				</div>
 				<div className="flex items-center gap-10 -mb-20 mt-10 justify-center">
 					<Link href={"https://devfolio.co/"}>
 						<Image
