@@ -100,7 +100,7 @@ function Homepage() {
             style={{ "height": "44px", "width": "312px" }}
           ></div>
         </div>
-        <div className="flex items-center gap-10 -mb-20 mt-10 justify-center">
+        <div className="flex items-center gap-3 md:gap-10 md:-mb-20 -mb-12 md:mt-10 justify-center">
           <Link href={"https://devfolio.co/"}>
             <Image
               src={devfolio}
