@@ -95,7 +95,7 @@ function Homepage() {
         </div>
         <div className="flex items-center mt-6 justify-center">
           <div
-            class="apply-button"
+            className="apply-button"
             data-hackathon-slug="fusionhackz"
             data-button-theme="dark"
             style={{ "height": "44px", "width": "312px" }}
