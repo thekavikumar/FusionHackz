@@ -5,7 +5,7 @@ import React from "react";
 export default function Home() {
   return (
     <div className="bg-[#B9ECFD] w-full">
-      <Homepage />;
+      <Homepage />
     </div>
   );
 }
