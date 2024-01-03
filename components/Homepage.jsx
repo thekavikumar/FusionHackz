@@ -102,7 +102,7 @@ function Homepage() {
             <Image
               src={replit}
               alt="REPLIT LOGO"
-              className="h-[64px] w-[300px]"
+              className="h-[64px] w-[280px]"
             />
           </Link>
         </div>
