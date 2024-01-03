@@ -15,17 +15,6 @@ import Link from "next/link";
 function Homepage() {
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
-  React.useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://apply.devfolio.co/v2/sdk.js";
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   useEffect(() => {
     const intervalId = setInterval(() => {
       setTimeRemaining(calculateTimeRemaining());
