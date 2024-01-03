@@ -49,10 +49,13 @@ function Homepage() {
     return { days, hours, minutes, seconds };
   }
   return (
-    <div className="h-screen flex justify-center items-center">
+    <div
+      suppressHydrationWarning
+      className="h-screen flex justify-center items-center"
+    >
       <Navbar />
 
-      <div className="text-center max-w-6xl z-10">
+      <div suppressHydrationWarning className="text-center max-w-6xl z-10">
         <div className="mb-14">
           <h1 className="text-7xl headline font-black mb-3 tracking-wider">
             Unleash the Fusion of Tech Brilliance
@@ -62,27 +65,43 @@ function Homepage() {
             innovation meets excellence in every line of code!
           </h2>
         </div>
-        <div className="flex items-center gap-4 mx-auto justify-center">
+        <div
+          suppressHydrationWarning
+          className="flex items-center gap-4 mx-auto justify-center"
+        >
           <h1 className="text-2xl font-semibold tracking-wide">
             Event Starts in:
           </h1>
-          <h1 className="text-3xl tracking-wide font-bold" id="counter">
+          <h1
+            suppressHydrationWarning
+            className="text-3xl tracking-wide font-bold"
+            id="counter"
+          >
             {timeRemaining.days}
-            <span className="text-lg font-semibold">Days</span> :{" "}
-            {timeRemaining.hours}
-            <span className="text-lg font-semibold">hrs</span> :{" "}
-            {timeRemaining.minutes}
-            <span className="text-lg font-semibold">min</span> :{" "}
-            {timeRemaining.seconds}
+            <span suppressHydrationWarning className="text-lg font-semibold">
+              Days
+            </span>{" "}
+            : {timeRemaining.hours}
+            <span suppressHydrationWarning className="text-lg font-semibold">
+              hrs
+            </span>{" "}
+            : {timeRemaining.minutes}
+            <span suppressHydrationWarning className="text-lg font-semibold">
+              min
+            </span>{" "}
+            : {timeRemaining.seconds}
             <span className="text-lg font-semibold">sec</span>
           </h1>
         </div>
-        <div
-          class="apply-button"
-          data-hackathon-slug="fusionhackz"
-          data-button-theme="dark"
-          style={{ "height": "44px;", "width": "312px" }}
-        ></div>
+        <div className="flex items-center mt-6 justify-center">
+          <div
+            className="apply-button"
+            data-hackathon-slug="fusionhackz"
+            data-button-theme="dark"
+            style={{ "height": "44px", "width": "312px" }}
+          ></div>
+        </div>
+
         <div className="flex items-center gap-10 -mb-20 mt-10 justify-center">
           <Link href={"https://devfolio.co/"}>
             <Image
