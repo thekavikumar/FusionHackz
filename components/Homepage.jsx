@@ -53,7 +53,7 @@ function Homepage() {
   return (
     <div
       suppressHydrationWarning
-      className="w-screen h-screen flex justify-center items-center md:px-10 px-4"
+      className=" h-screen flex justify-center items-center md:px-10 px-4"
     >
       <Navbar />
 
@@ -127,7 +127,7 @@ function Homepage() {
       <Image
         src={rocket}
         alt=""
-        className="absolute w-[350px] md:right-3 -right-[130px]"
+        className="absolute md:inline hidden w-[350px] md:right-3 -right-[130px]"
       />
       <marquee
         behavior=""
