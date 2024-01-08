@@ -92,7 +92,7 @@ function Homepage() {
             <span className="text-lg font-semibold">sec</span>
           </h1>
         </div>
-        <div className="flex items-center mt-6 justify-center">
+        <div className="flex items-center mt-6 mb-3 md:mb-0 justify-center">
           <div
             className="apply-button"
             data-hackathon-slug="fusionhackz"
