@@ -2,6 +2,7 @@
 import React from "react";
 import logo from "../assets/fhzrounded.png";
 import Image from "next/image";
+import Link from "next/link";
 
 function Navbar() {
   const [open, setOpen] = React.useState(false);
@@ -22,9 +23,12 @@ function Navbar() {
         <li className="hover:border-b-4 cursor-pointer duration-200 rounded-sm border-black">
           FAQs
         </li>
-        <button className="bg-black border-2 border-black px-3 py-2 rounded-md text-white hover:bg-transparent text-xl font-bold hover:text-black transition-all duration-100 ease-in-out">
+        <Link
+          href={"https://fusionhackz.devfolio.co/"}
+          className="bg-black border-2 border-black px-3 py-2 rounded-md text-white hover:bg-transparent text-xl font-bold hover:text-black transition-all duration-100 ease-in-out"
+        >
           Apply Now!
-        </button>
+        </Link>
       </ul>
 
       <svg
@@ -73,9 +77,12 @@ function Navbar() {
             <li className="hover:border-b-4 cursor-pointer duration-200 rounded-sm border-black">
               FAQs
             </li>
-            <button className="bg-black border-2 border-black px-3 py-2 rounded-md text-white hover:bg-transparent text-xl font-bold hover:text-black transition-all duration-100 ease-in-out">
+            <Link
+              href={"https://fusionhackz.devfolio.co/"}
+              className="bg-black border-2 border-black px-3 py-2 rounded-md text-white hover:bg-transparent text-xl font-bold hover:text-black transition-all duration-100 ease-in-out"
+            >
               Apply Now!
-            </button>
+            </Link>
           </ul>
         </div>
       )}
