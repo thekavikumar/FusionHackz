@@ -11,7 +11,7 @@ function Navbar() {
       {/* <img src={logo} alt="logo" className="h-12" /> */}
       <Image src={logo} alt="logo" height={50} />
       <ul className="lg:flex text-xl font-medium justify-between gap-14 items-center hidden">
-        <l1 className="hover:border-b-4 cursor-pointer duration-200 ease-in-out rounded-sm border-black">
+        {/* <l1 className="hover:border-b-4 cursor-pointer duration-200 ease-in-out rounded-sm border-black">
           Prizes
         </l1>
         <li className="hover:border-b-4 cursor-pointer duration-200 rounded-sm border-black">
@@ -22,7 +22,7 @@ function Navbar() {
         </li>
         <li className="hover:border-b-4 cursor-pointer duration-200 rounded-sm border-black">
           FAQs
-        </li>
+        </li> */}
         <Link
           href={"https://fusionhackz.devfolio.co/"}
           className="bg-black border-2 border-black px-3 py-2 rounded-md text-white hover:bg-transparent text-xl font-bold hover:text-black transition-all duration-100 ease-in-out"
