@@ -14,7 +14,7 @@ import Link from "next/link";
 
 function Homepage() {
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
-
+  // upto
   React.useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://apply.devfolio.co/v2/sdk.js";
